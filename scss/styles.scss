@@ -12,10 +12,134 @@ body {
 }
 .content {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  flex-wrap: wrap;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  div {
+    flex: 1 0 100%;
+  }
+  div:first-child {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+}
+
+.titleContainer {
+  padding-left: 16%;
+  margin-top: -50px;
+}
+
+.subtitle {
+  padding-right: 30%;
+}
+
+.resumeButton {
+
+}
+
+.title {
+  flex: 1 0 30%;
+  width: 30%;
+  -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg); /* Standard syntax */
+}
+
+.title h1 {
+  font-size: 100pt;
+  color: black;
+  .fullWord {
+    .customFirstLetter {
+      color: #008AFF;
+      animation: colorChange 1.5s ease;
+    }
+    display: block;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em; /* Adjust as needed */
+  }
+}
+
+.firstName {
+  .fullWord {
+    animation:
+      fail-typing 1.5s steps(10, end),
+      typing .75s steps(15, end) 1.5s,
+      blink-caret .75s step-end 3;
+  }
+}
+
+.lastName {
+  width: 85%;
+  .fullWord {
+    padding-left: 70px;
+    visibility: hidden;
+    animation:
+      last-typing .75s steps(15, end) 2.25s,
+      blink-caret .75s step-end 2.25s infinite;
+  }
+}
+
+/* The typing effect */
+@keyframes colorChange {
+  0% {
+    color: black;
+  }
+  99% {
+    color: black;
+  }
+  100% {
+    color: #008AFF;
+  }
+}
+
+@keyframes fail-typing {
+  0% {
+    width: 0
+  }
+  30% {
+    width: 63%
+  }
+  70% {
+    width: 63%
+  }
+  100% {
+    color: black !important;
+    width: 0%
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0
+  }
+  100% {
+    width: 100%
+  }
+}
+
+@keyframes last-typing {
+  0% {
+    width: 0
+  }
+  100% {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+    visibility: visible;
+  }
+  50% { border-color: #008AFF; }
 }
 
 .myBlue {
@@ -25,6 +149,14 @@ body {
   &.text {
     background-color: #008AFF;
   }
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
 }
 
 p {
@@ -44,14 +176,4 @@ h1 {
 }
 p {
   margin: 0 0 20px 0;
-}
-
-.button {
-  display: block;
-    height: 50px;
-    width: 50px;
-    background: #ddd;
-    border-radius: 50%;
-    // position: absolute;
-    // top: 0px;
 }
