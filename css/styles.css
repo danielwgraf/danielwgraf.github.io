@@ -2917,6 +2917,9 @@ button.btn-floating {
   .footer .icons {
     margin-bottom: 2em;
     display: inline-block; }
+    @media screen and (max-width: 600px) {
+      .footer .icons {
+        display: none; } }
     .footer .icons li {
       display: inline-block;
       padding-right: 2.5em; }
@@ -2996,9 +2999,31 @@ h1, h2, h3, h4, h5, h6, p {
 .titleContainer {
   padding-left: 16%;
   margin-top: -50px; }
+  @media screen and (max-width: 600px) {
+    .titleContainer {
+      margin-top: 50px; } }
 
 .subtitle {
   padding-right: 30%; }
+  @media screen and (max-width: 600px) {
+    .subtitle {
+      padding-right: 15%; } }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .subtitle {
+      padding-right: 15%; }
+      .subtitle p {
+        font-size: 200%; } }
+
+@media screen and (max-width: 600px) {
+  .resumeButton {
+    margin-top: 50px; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .resumeButton a {
+    width: 40%;
+    height: auto; }
+    .resumeButton a p {
+      padding-top: 20px;
+      font-size: 200%; } }
 
 .title {
   flex: 1 0 30%;
@@ -3013,6 +3038,9 @@ h1, h2, h3, h4, h5, h6, p {
 .title h1 {
   font-size: 100pt;
   color: black; }
+  @media screen and (max-width: 600px) {
+    .title h1 {
+      font-size: 50pt; } }
   .title h1 .fullWord {
     display: block;
     overflow: hidden;
@@ -3038,6 +3066,9 @@ h1, h2, h3, h4, h5, h6, p {
     padding-left: 70px;
     visibility: hidden;
     animation: last-typing 0.75s steps(15, end) 2.25s, blink-caret 0.75s step-end 2.25s infinite; }
+    @media screen and (max-width: 600px) {
+      .lastName .fullWord {
+        padding-left: 30px; } }
 
 /* The typing effect */
 @keyframes colorChange {
