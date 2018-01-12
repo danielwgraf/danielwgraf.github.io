@@ -6,6 +6,7 @@ html {
   height: 100%;
 }
 body {
+  background-color: rgb(82, 86, 89);
   display: flex;
   flex-direction: column;
   height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
@@ -94,7 +95,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
     display: block;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid white; /* The typwriter cursor */
+    border-right: .15em solid rgb(82, 86, 89); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .05em; /* Adjust as needed */

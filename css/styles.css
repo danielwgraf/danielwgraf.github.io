@@ -2905,7 +2905,7 @@ button.btn-floating {
 
 .footer {
   height: 25%;
-  background: white;
+  background: #525659;
   color: white;
   flex-shrink: 0;
   /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
@@ -2931,7 +2931,7 @@ button.btn-floating {
       -webkit-transition: all .2s ease-in;
       transition: all .2s ease-in;
       text-decoration: none;
-      color: #525659;
+      color: #84898d;
       border: 2px solid #999;
       border-radius: 50%;
       text-align: center;
@@ -2965,6 +2965,7 @@ html {
   height: 100%; }
 
 body {
+  background-color: #525659;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -3045,7 +3046,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: block;
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid white;
+    border-right: 0.15em solid #525659;
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */

@@ -4,7 +4,7 @@
 //
 .footer {
   height: 25%;
-  background: white;
+  background: rgb(82, 86, 89);
   color: white;
 
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
@@ -36,7 +36,7 @@
       transition: all .2s ease-in;
 
       text-decoration: none;
-      color: rgb(82, 86, 89);
+      color: lighten(rgb(82, 86, 89), 20%);
       border: 2px solid #999;
       border-radius:50%;
       text-align: center;
