@@ -80,14 +80,14 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: 'Cutive', serif;
   flex: 1 0 30%;
   width: 30%;
-  padding-top: 10%;
-  -ms-transform: rotate(-0deg); /* IE 9 */
-    -webkit-transform: rotate(-0deg); /* Safari */
-    transform: rotate(-0deg); /* Standard syntax */
+  // padding-top: 10%;
+  -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg); /* Standard syntax */
 }
 
 .title h1 {
-  font-size: 80pt;
+  font-size: 70pt;
   // line-height: 1.6;
   @media screen and (max-width: 600px) {
     font-size: 50pt;
@@ -118,11 +118,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .lastName {
-  width: 72%;
+  width: 90%;
   .fullWord {
-    // padding-left: 70px;
+    padding-left: 70px;
     @media screen and (max-width: 600px) {
-      // padding-left: 30px;
+      width: 90%;
+      padding-left: 30px;
     }
     visibility: hidden;
     animation:
